@@ -1,5 +1,5 @@
 public class Plate {
-    private int food;
+  int food;
 
     public Plate(int food) {
         this.food = food;
@@ -12,6 +12,7 @@ public class Plate {
     public void decreaseFood(int amount) {
         food -= amount;
     }
+
 
     @Override
     public String toString() {
