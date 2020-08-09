@@ -20,8 +20,8 @@ public class Plate {
         return true;
     }
 
-    public int addFood( int addFood) {
-
+    public int addFood(int addFood) {
+        return food + addFood;
     }
 
 
