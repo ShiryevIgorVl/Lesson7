@@ -9,15 +9,24 @@ public class Plate {
         return food;
     }
 
-    public void decreaseFood(int amount) {
-        food -= amount;
+    public void decreaseFood(int satiety) {
+        food -= satiety;
+    }
+
+    public boolean checkingPlate (Cat cat) {
+        if (food < cat.satiety) {
+            return false;
+        }
+        return true;
+    }
+
+    public int addFood( int addFood) {
+
     }
 
 
-    @Override
-    public String toString() {
-        return "Plate{" +
-                "food=" + food +
-                '}';
-    }
+
+
+
+
 }
