@@ -20,12 +20,12 @@ public class Cat {
             plate.decreaseFood(getSatiety());
         }
 
-        public boolean catSatietyNosatiety (Plate plate) {
-                if (satiety <= plate.food){
-                return true;
-            }
-                return false;
-        }
+//        public boolean catSatietyNosatiety (Plate plate) {
+//                if (satiety <= plate.food){
+//                return true;
+//            }
+//                return false;
+//        }
 
 
 }
