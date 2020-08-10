@@ -16,8 +16,8 @@ public class Cat {
         }
 
         public void eat(Plate plate) {
-            System.out.println(name + " ест");
-            plate.decreaseFood(getSatiety());
+            System.out.println(name + " сыт");
+            plate.decreaseFood(satiety);
         }
 
 //        public boolean catSatietyNosatiety (Plate plate) {

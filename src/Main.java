@@ -1,6 +1,6 @@
 public class Main {
         public static void main(String[] args) {
-            Plate plate = new Plate(18);
+            Plate plate = new Plate(3, 10);
 
             Cat[] cat = {
                     new Cat("Барсик", 3),
@@ -10,19 +10,17 @@ public class Main {
                     new Cat ("Котофей", 7)
             };
             for (int i = 0; i < cat.length; i++) {
-                cat[i].eat(plate);
-                if (plate.checkingPlate (cat[i]) == false) {
-                    System.out.println(cat[i+1].getName() +  " остался голодным.");
-                    break;
-                }
 
+                if (plate.checkingPlate (cat[i]) == true) {
+                    cat[i].eat(plate);
 
-        }
+                } else {
+                    System.out.println(cat[i].getName() + " остался голодным.");
+                    //break;
+                    plate.adddFood();
+                         }
 
-
+                    }
             }
-
-
-
-            }
+}
 
